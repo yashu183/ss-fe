@@ -2,7 +2,6 @@
   "name": "dna-fe",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://54.152.68.117:8080/",
   "dependencies": {
     "@superset-ui/embedded-sdk": "^0.1.0-alpha.7",
     "@testing-library/jest-dom": "^5.16.5",
@@ -13,6 +12,7 @@
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.40.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
