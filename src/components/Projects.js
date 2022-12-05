@@ -72,13 +72,13 @@ function getGeustToken() {
 }
 
 const Projects = () => {
-  useEffect(() => {
+  useEffect(async () => {
     if (
       !localStorage.getItem("project_guest_token") ||
       jwt_decode(localStorage.getItem("project_guest_token")).exp * 1000 <
         Date.now()
     ) {
-      getGeustToken();
+      await getGeustToken();
       embedDashboard({
         id: DASHBOARD_UUID, // given by the Superset embedding UI
         supersetDomain: SUPERSET_DOMAIN,
