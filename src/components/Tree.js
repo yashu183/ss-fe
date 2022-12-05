@@ -7,7 +7,7 @@ const DASHBOARD_UUID = "916325f0-aa8f-45d9-b6f9-b674a9d4a8bb";
 const SUPERSET_DOMAIN = "http://54.152.68.117:8080";
 
 function getAccessToken() {
-  const login_url = "http://localhost:8080/api/v1/security/login";
+  const login_url = "http://54.152.68.117:8080/api/v1/security/login";
   const login_payload = {
     password: "Test@123",
     provider: "db",
@@ -25,7 +25,8 @@ function getAccessToken() {
 }
 
 function getGeustToken() {
-  const guest_token_url = "http://localhost:8080/api/v1/security/guest_token/";
+  const guest_token_url =
+    "http://54.152.68.117:8080/api/v1/security/guest_token/";
 
   const guest_token_payload = {
     user: {
