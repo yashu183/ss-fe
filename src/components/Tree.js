@@ -2,9 +2,10 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { embedDashboard } from "@superset-ui/embedded-sdk";
 import jwt_decode from "jwt-decode";
+import * as CONSTANTS from "../Constants";
 
-const DASHBOARD_UUID = "916325f0-aa8f-45d9-b6f9-b674a9d4a8bb";
-const SUPERSET_DOMAIN = "http://54.152.68.117:8080";
+const DASHBOARD_UUID = CONSTANTS.TREE_DASHBOARD_UUID;
+const SUPERSET_DOMAIN = CONSTANTS.SUPERSET_DOMAIN;
 
 async function getAccessToken() {
   const login_url = "api/v1/security/login";
